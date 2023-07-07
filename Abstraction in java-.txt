@@ -1,0 +1,45 @@
+Abstraction in java:-
+======================
+
+ Abstraction is a fundamental concept in object-oriented programming (OOP) that allows you to define common behaviors and characteristics without providing implementation details. It focuses on defining the essential features or properties of an object while hiding the internal complexities.
+
+Example:
+
+abstract class Shape {
+    protected String color;
+    public Shape(String color) {
+        this.color = color;
+    }
+    public abstract double getArea();
+    public abstract double getPerimeter();
+    public void display() {
+        System.out.println("This is a " + color + " shape.");
+    }
+}
+class Circle extends Shape {
+    private double radius;
+    public Circle(String color, double radius) {
+        super(color);
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+}
+public class AbstractionExample {
+    public static void main(String[] args) {
+        Shape circle = new Circle("Red", 5.0);
+        circle.display();
+        System.out.println("Area: " + circle.getArea());
+        System.out.println("Perimeter: " + circle.getPerimeter());
+    }
+}
+
+In the above example, the Shape class is declared as abstract using the abstract keyword. It contains a protected instance variable color and provides abstract methods getArea() and getPerimeter(). The display() method is a concrete method that can be directly used by subclasses, the Circle class extends the Shape class and overrides the getArea() and getPerimeter() methods with its specific implementation based on the properties of a circle. we create an instance of the Circle class and assign it to the Shape reference circle. We can call the display(), getArea(), and getPerimeter() methods on the circle object without knowing the exact implementation details of the shape.

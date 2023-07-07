@@ -1,0 +1,14 @@
+Loose coupling in java by oop's:-
+================================
+    Loose coupling is a design principle in object-oriented programming that promotes independence and flexibility among classes or modules. Here are some ways to achieve loose coupling in Java using OOP concepts:
+
+-> Encapsulation: Encapsulating the internal details of a class and exposing only necessary methods or interfaces helps in reducing dependencies. By providing a well-defined interface, you can minimize the direct coupling between classes.
+
+-> Abstraction: Using interfaces or abstract classes to define contracts or common behaviors allows classes to interact through those abstractions instead of concrete implementations. This reduces direct dependencies and promotes loose coupling.
+
+-> Dependency Injection (DI): DI is a technique where dependencies of a class are injected from the outside rather than being created or instantiated within the class itself. This approach allows for flexible configuration and loose coupling. Dependency Injection frameworks, such as Spring, can help in achieving loose coupling through DI.
+
+-> Inversion of Control (IoC): IoC is closely related to DI and involves delegating control of object instantiation and management to a container or framework. By following the principle of IoC, dependencies are managed by an external entity, reducing coupling and promoting flexibility.
+
+-> Interface-based Programming: Programming to interfaces rather than concrete implementations helps in decoupling classes. By depending on interfaces, you can easily switch implementations and introduce new classes without affecting the existing code that relies on the interfaces.
+

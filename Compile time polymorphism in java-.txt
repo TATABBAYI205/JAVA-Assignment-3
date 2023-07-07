@@ -1,0 +1,22 @@
+Compile time polymorphism in java:-
+=================================
+
+public class PolymorphismExample {
+    public static void display(String message) {
+        System.out.println("Displaying message: " + message);
+    }
+
+    public static void display(int number) {
+        System.out.println("Displaying number: " + number);
+    }
+
+    public static void display(String message, int number) {
+        System.out.println("Displaying message: " + message);
+        System.out.println("Displaying number: " + number);
+    }
+
+    public static void main(String[] args) {
+        display("Hello");          
+        display(10);               
+        display("Hi", 20);        
+}

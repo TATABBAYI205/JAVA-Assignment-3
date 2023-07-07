@@ -1,0 +1,18 @@
+Final Class:-
+============
+ A final class is a class that cannot be extended or subclassed. It serves as the final implementation of a class, and no other class can inherit from it. This prevents any further modifications to the class's behavior or structure. Marking a class as final is often done to ensure that the class's design, functionality, or security cannot be altered or compromised by other classes.
+Example:
+
+final class MyFinalClass {
+    // Class implementation
+}
+
+In the above example, the class MyFinalClass is declared as final. It cannot be extended or subclassed.
+
+Benefits of Final Classes:-
+
+-> Security: By making a class final, you ensure that its implementation cannot be overridden or compromised by creating a subclass with altered behavior.
+
+-> Performance: Final classes allow the compiler to perform certain optimizations, as it knows that the class cannot be extended or overridden.
+
+-> Design and Stability: Final classes provide a clear and stable implementation, which can be important when designing critical classes or APIs.

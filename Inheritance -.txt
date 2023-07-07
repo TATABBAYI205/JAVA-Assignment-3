@@ -1,0 +1,34 @@
+Inheritance :-
+=============
+class ParentClass {
+    public void display() {
+        System.out.println("This is the display method of the parent class.");
+    }
+}
+class ChildClass extends ParentClass {
+    @Override
+    public void display() {
+        System.out.println("This is the display method of the child class.");
+    }
+}
+public class InheritanceExample {
+    public static void main(String[] args) {
+        ParentClass parent = new ParentClass();
+        parent.display();
+
+        ChildClass child = new ChildClass();
+        child.display();
+
+        ParentClass polymorphicChild = new ChildClass();
+        polymorphicChild.display();
+    }
+}
+
+When a method in a ChildClass has the same name and type signature as a method in its ParentClass,then the method in the sub class is said to override the method in the ChildClass.Like overloading,it is a feature that supports polymorphism.
+
+When an overridden method is called from within a subclass,it will always refer to the version of the method defined by the childclass.The parentclass version of the method is hidden.
+
+In the above code,we see that child class overrides the method dislpay() in parentclass.
+
+
+

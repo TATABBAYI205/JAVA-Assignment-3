@@ -1,0 +1,10 @@
+Java is not pure object-oriented:-
+=================================
+      Java is not considered a 100% pure object-oriented programming language. 
+Because of following are
+
+-> Primitive Data Types: Java includes primitive data types such as int, boolean, float, etc., which are not objects. These types are not derived from a class and do not have associated methods or properties. However, Java provides wrapper classes (e.g., Integer, Boolean, Float) to treat these primitive types as objects when needed.
+
+-> Static Members: Java allows the declaration of static members (variables and methods) at the class level. These members are associated with the class itself, rather than with individual objects. Static members can be accessed without creating an instance of the class, and they are not part of the object-oriented paradigm, as they do not involve object state or behavior.
+
+-> Procedural Programming: While Java is primarily an object-oriented language, it does allow the use of procedural programming techniques. You can define functions outside of classes, use control flow statements (e.g., loops, conditionals), and write procedural-style code. However, these procedural elements are typically used in conjunction with objects and classes in Java.
